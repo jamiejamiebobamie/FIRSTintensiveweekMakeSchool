@@ -1,0 +1,16 @@
+<form method="POST" action="/users/{{user._id}}?_method=PUT">
+  <fieldset>
+    <legend>New Dog</legend>
+    <!-- TITLE -->
+    <p>
+      <label for="dog">name</label><br>
+      <input type="text" name="dog.name" />
+    </p>
+  </fieldset>
+
+  <!-- BUTTON -->
+  <p>
+    <button type="submit">Save Dog</button>
+  </p>
+
+</form>
