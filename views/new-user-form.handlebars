@@ -1,1 +1,20 @@
-<h1>This is the new user form</h1>
+<form method="POST" action="/users">
+  <fieldset>
+    <legend>New User</legend>
+    <!-- TITLE -->
+    <p>
+      <label for="name">name</label><br>
+      <input type="text" name="name" />
+    </p>
+    <p>
+      <label for="dogs">dogs</label><br>
+      <input type="text" name="dogs" />
+    </p>
+  </fieldset>
+
+  <!-- BUTTON -->
+  <p>
+    <button type="submit">Save User</button>
+  </p>
+
+</form>
