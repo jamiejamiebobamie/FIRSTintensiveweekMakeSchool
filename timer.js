@@ -76,7 +76,7 @@ function switchTimer(){
 
 
 
-setInterval(switchTimer(), 1000);
+switchTimer();
 
 
 //console.log(Date.now())
