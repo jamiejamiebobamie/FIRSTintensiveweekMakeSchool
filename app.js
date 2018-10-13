@@ -86,6 +86,15 @@ app.put('/users/:id', (req, res) => {
     })
 })
 
+app.delete('/users/:id', function (req, res) {
+  console.log("DELETE user")
+  User.findByIdAndRemove(req.params.id).then((user) => {
+    res.redirect('/');
+  }).catch((err) => {
+    console.log(err.message);
+  })
+})
+
 // NEW dog
 app.get('/users/:id/dogs/new', (req, res) => {
   res.render('new-dog-form', {});
