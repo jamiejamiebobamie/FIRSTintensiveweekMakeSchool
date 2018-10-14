@@ -1,0 +1,8 @@
+<!-- users-index -->
+<h1>dogs</h1>
+{{#each dogs}}
+  <h2><a href="/users/{{this._id}}">{{this.name}}</a></h2>
+  <p><small>{{this.name}}</small></p>
+{{/each}}
+
+<a href="/users/new">New User</a>

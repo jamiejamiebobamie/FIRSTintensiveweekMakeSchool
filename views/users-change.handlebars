@@ -1,3 +1,23 @@
+<input type="hidden" value="{{user._id}}" name="userId">
+
+<p>UserId:{{user._id}}</p>
+
 <p><form method="POST" action="/users/{{user._id}}?_method=DELETE">
-    <button type="submit">Delete user</button>
+    <button type="submit">I want to delete my profile!</button>
+</form></p>
+
+<p><form method="GET" action="/users/{{user._id}}/edit">
+    <button type="submit">I live somewhere else now.</button>
+</form></p>
+
+<p><form method="GET" action="/users/{{user._id}}/dogs/new">
+    <button type="submit">I got another dog!</button>
+</form></p>
+
+<p><form method="GET" action="/users/{{user._id}}/dogs">
+    <button type="submit">I walk my dog differently.</button>
+</form></p>
+
+<p><form method="GET" action="/users/{{user._id}}/dogs">
+    <button type="submit">I've changed my name.</button>
 </form></p>
